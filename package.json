@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js"
+    "start": "export NODE_ENV=development&& forever -w ./index.js",
+    "start:production": "export NODE_ENV=production&& forever ./index.js"
   },
   "type": "module",
   "repository": {
@@ -18,6 +19,13 @@
   },
   "homepage": "https://github.com/MusicCorner/nodejs_todo_api#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "pg": "^8.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "forever": "^3.0.2"
   }
 }
