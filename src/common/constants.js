@@ -4,6 +4,11 @@ export const API_CONFIG = {
   },
 };
 
+export const DB_CONFIG = {
+  password: 'root',
+  user: 'postgres',
+};
+
 export const ENV = {
   PRODUCTION_ENV: 'production',
   DEV_ENV: 'development',
