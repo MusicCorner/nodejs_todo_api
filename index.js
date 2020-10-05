@@ -1,6 +1,7 @@
 import express from 'express';
-import { API_CONFIG, ENV } from './src/common/constants.js';
 import dotenv from 'dotenv';
+
+import { API_CONFIG, ENV } from './src/common/constants.js';
 import extendExpress from './src/utils/express.use.js';
 import initRoutes from './src/routes/index.js';
 

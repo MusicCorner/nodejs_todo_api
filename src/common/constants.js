@@ -7,6 +7,7 @@ export const API_CONFIG = {
 export const DB_CONFIG = {
   password: 'root',
   user: 'postgres',
+  database: 'todo',
 };
 
 export const ENV = {
