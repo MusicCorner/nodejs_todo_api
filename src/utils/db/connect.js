@@ -14,3 +14,5 @@ export const initConnection = async () => {
     return handleError(e);
   }
 };
+
+export default () => { };

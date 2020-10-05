@@ -16,3 +16,11 @@ export const ENV = {
     return process.env.NODE_ENV === this.DEV_ENV;
   },
 };
+
+export const ROUTES = {
+  USER: '/current',
+  LOGIN: '/login',
+  SIGN_UP: '/sign-up',
+  TODOS: '/todos',
+  GET_TODO_ROUTE(todoId) { return `${this.TODOS}/${todoId}/`; },
+};
